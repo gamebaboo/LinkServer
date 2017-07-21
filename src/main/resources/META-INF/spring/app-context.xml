@@ -7,7 +7,8 @@
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
     http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <context:component-scan base-package="com.ex" />
+    <context:annotation-config />
+
 
     <!-- ================================== -->
     <!-- Define camel context -->
@@ -15,7 +16,12 @@
     <camel:camelContext id="camel">
         <!-- Location for route scan -->
         <camel:package>com.ex</camel:package>
+
+
     </camel:camelContext>
+
+
+
 
 
     <!-- ================================== -->

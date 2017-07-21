@@ -1,6 +1,8 @@
 package com.ex.link;
 
 import com.ex.link.db.HikariCP;
+import org.springframework.context.ApplicationContext;
+import org.springframework.jca.context.SpringContextResourceAdapter;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;

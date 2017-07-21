@@ -73,7 +73,7 @@ public class ServerRouteBuilder extends RouteBuilder {
         from("quartz2://foo?cron=0+0/1+*+?+*+*")
                 .bean(CreateMessage.class, "cmsMessage")
                 //.bean(dbConnect.class, "insert")
-                .setHeader(Exchange.FILE_NAME, constant("data-20170719"))
+                .setHeader(Exchange.FILE_NAME, constant("data-20170721"))
                 .to("file:D:\\output");
 
         /*
